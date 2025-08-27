@@ -27,35 +27,19 @@ export function TopOffersModal({ sites }: TopOffersModalProps) {
     }
   }, [])
 
-  const renderStars = (score: number) => {
-    const stars = []
-    const maxScore = 10
+  const renderStars = (stars: number) => {
+    const starElements = []
     const maxStars = 5
 
-    // Convert score to star rating (10 points = 5 stars, so 2 points = 1 star)
-    const starRating = (score / maxScore) * maxStars
-
     for (let i = 0; i < maxStars; i++) {
-      const starValue = i + 1
-      let fillPercentage = 0
-
-      if (starRating >= starValue) {
-        fillPercentage = 100
-      } else if (starRating > i) {
-        fillPercentage = (starRating - i) * 100
+      if (i < stars) {
+        starElements.push(<Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />)
+      } else {
+        starElements.push(<Star key={i} className="h-4 w-4 text-gray-300" />)
       }
-
-      stars.push(
-        <div key={i} className="relative">
-          <Star className="h-4 w-4 text-gray-300" />
-          <div className="absolute top-0 left-0 overflow-hidden" style={{ width: `${fillPercentage}%` }}>
-            <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
-          </div>
-        </div>,
-      )
     }
 
-    return stars
+    return starElements
   }
 
   // Get only the first site
@@ -85,8 +69,8 @@ export function TopOffersModal({ sites }: TopOffersModalProps) {
                 <Image src={topSite.logo || "/placeholder.svg"} alt={topSite.name} fill className="object-contain" />
               </div>
               <div className="flex items-center justify-center gap-2 mb-2">
-                <div className="flex items-center justify-center gap-0.5">{renderStars(topSite.score)}</div>
-                <span className="font-bold text-lg">{topSite.score.toFixed(1)}</span>
+                <div className="flex items-center justify-center gap-0.5">{renderStars(topSite.stars)}</div>
+                <span className="font-bold text-lg">{topSite.rating.toFixed(1)}</span>
                 <span className="text-gray-500 text-sm">({topSite.reviews} avaliações)</span>
               </div>
             </div>
@@ -100,7 +84,7 @@ export function TopOffersModal({ sites }: TopOffersModalProps) {
             {/* CTA Button */}
             <div className="p-4 text-center">
               <a
-                href={topSite.link}
+                href={topSite.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-portugal-green hover:bg-portugal-dark-green text-white text-base font-bold rounded-lg text-center transition-colors duration-200 mb-3"
