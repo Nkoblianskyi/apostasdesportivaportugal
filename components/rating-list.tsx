@@ -87,7 +87,7 @@ export function RatingList({ sites }: RatingListProps) {
                       {/* Desktop Layout */}
                       <div className="hidden md:grid grid-cols-12 gap-4 items-center">
                         <div className="col-span-3 flex flex-col items-center justify-center">
-                          <div className="p-4 relative rounded-lg bg-gray-100 w-full max-w-[200px]">
+                          <div className="p-4 relative rounded-lg bg-black w-full max-w-[200px]">
                             <div className="relative h-16 w-full">
                               <Image
                                 src={site.logo || "/placeholder.svg"}
@@ -126,7 +126,7 @@ export function RatingList({ sites }: RatingListProps) {
                       <div className="md:hidden">
                         <div className="grid grid-cols-2 gap-3 items-center mb-3">
                           <div className="flex justify-start">
-                            <div className="p-4 relative rounded-lg bg-gray-100 w-full">
+                            <div className="p-4 relative rounded-lg bg-black w-full">
                               <div className="relative h-28 w-full">
                                 <Image
                                   src={site.logo || "/placeholder.svg?height=80&width=120&text=" + site.name}
