@@ -15,8 +15,20 @@ export interface BettingSite {
 }
 
 export const bettingSites: BettingSite[] = [
-  {
+    {
     id: 1,
+    name: "Lebull",
+    logo: "/lebull.svg",
+    bonus: "250% até 400€ + 50€ de Aposta Grátis",
+    url: "https://www.lebull.pt/",
+    rating: 9.8,
+    stars: 5,
+    reviews: 7654,
+    badges: ["POPULAR"],
+    isPopular: true,
+  },
+  {
+    id: 2,
     name: "Luckia",
     logo: "/luckia.svg",
     bonus: "Aposta Grátis de Atualmente",
@@ -29,7 +41,7 @@ export const bettingSites: BettingSite[] = [
     isTopLine: true,
   },
   {
-    id: 2,
+    id: 3,
     name: "Solverde",
     logo: "/solverde.svg",
     bonus: "300% até 30€ em Aposta Grátis",
@@ -42,7 +54,7 @@ export const bettingSites: BettingSite[] = [
     isTrending: true,
   },
   {
-    id: 3,
+    id: 4,
     name: "Betclic",
     logo: "/betclic.svg",
     bonus: "100% Até 20€",
@@ -53,18 +65,7 @@ export const bettingSites: BettingSite[] = [
     badges: ["TENDÊNCIA"],
     isTrending: true,
   },
-  {
-    id: 4,
-    name: "Lebull",
-    logo: "/lebull.svg",
-    bonus: "250% até 400€ + 50€ de Aposta Grátis",
-    url: "https://www.lebull.pt/",
-    rating: 9.1,
-    stars: 5,
-    reviews: 7654,
-    badges: ["POPULAR"],
-    isPopular: true,
-  },
+
   {
     id: 5,
     name: "Casino Portugal",
