@@ -65,7 +65,7 @@ export function TopOffersModal({ sites }: TopOffersModalProps) {
 
             {/* Logo Section */}
             <div className="bg-gray-50 p-4 text-center border-b">
-              <div className="relative bg-black h-20 w-full max-w-[200px] mx-auto mb-3 mt-2 p-4">
+              <div className="relative bg-black h-20 w-full max-w-[200px] mx-auto mb-3 mt-2 p-4 rounded-lg">
                 <Image src={topSite.logo || "/placeholder.svg"} alt={topSite.name} fill className="object-contain" />
               </div>
               <div className="flex items-center justify-center gap-2 mb-2">
