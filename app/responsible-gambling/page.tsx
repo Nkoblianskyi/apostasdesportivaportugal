@@ -7,49 +7,49 @@ import { FadeIn } from "@/components/animations/fade-in"
 export default function ResponsibleGamblingPage() {
   return (
     <PolicyPageLayout
-      title="Responsible Gambling"
+      title="Jogo Responsável"
       heroImage="/responsible-gambling-bg.png"
-      heroAlt="Responsible gambling concept"
+      heroAlt="Conceito de jogo responsável"
     >
       <div className="mb-8">
         <FadeIn>
           <p className="text-lg md:text-xl text-emerald-400 mb-6 leading-relaxed">
-            At BestieBettingSites.com, we believe that gambling should always be a fun and entertaining activity, not a
-            way to make money or solve financial problems. We are committed to promoting responsible gambling and
-            providing resources to help our users stay in control.
+            Na ApostasDesportivaPortugal.com, acreditamos que as apostas devem ser sempre uma atividade divertida e de
+            entretenimento, nunca uma forma de ganhar dinheiro ou resolver problemas financeiros. Estamos empenhados em
+            promover o jogo responsável e fornecer recursos para ajudar os nossos utilizadores a manter o controlo.
           </p>
         </FadeIn>
       </div>
 
-      <PolicySection title="Signs of Problem Gambling">
+      <PolicySection title="Sinais de Jogo Problemático">
         <PolicyParagraph>
-          It's important to recognize the warning signs of problem gambling. If you or someone you know is experiencing
-          any of these signs, it may be time to seek help:
+          É importante reconhecer os sinais de alerta do jogo problemático. Se você ou alguém que conhece está a
+          experienciar algum destes sinais, pode ser altura de procurar ajuda:
         </PolicyParagraph>
         <PolicyList
           items={[
-            "Spending more time or money on gambling than you can afford",
-            "Finding it difficult to stop or control your gambling",
-            "Lying to friends or family about your gambling habits",
-            "Gambling to escape problems or to cope with feelings of anxiety or depression",
-            "Borrowing money or selling possessions to fund gambling",
-            "Neglecting work, education, or family commitments due to gambling",
-            "Feeling irritable or restless when trying to cut down on gambling",
+            "Gastar mais tempo ou dinheiro em apostas do que pode permitir-se",
+            "Ter dificuldade em parar ou controlar as suas apostas",
+            "Mentir a amigos ou família sobre os seus hábitos de apostas",
+            "Apostar para escapar a problemas ou para lidar com sentimentos de ansiedade ou depressão",
+            "Pedir dinheiro emprestado ou vender bens para financiar apostas",
+            "Negligenciar trabalho, educação ou compromissos familiares devido às apostas",
+            "Sentir-se irritável ou inquieto quando tenta reduzir as apostas",
           ]}
         />
       </PolicySection>
 
-      <PolicySection title="Tips for Responsible Gambling" delay={100}>
+      <PolicySection title="Dicas para Apostas Responsáveis" delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
           <div className="bg-gray-700/50 p-4 rounded-lg flex gap-4">
             <div className="flex-shrink-0">
               <Clock className="h-8 w-8 text-emerald-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Set Time Limits</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">Defina Limites de Tempo</h3>
               <p className="text-sm text-gray-300">
-                Decide how much time you want to spend gambling and stick to it. Set an alarm to remind you when your
-                time is up.
+                Decida quanto tempo quer gastar a apostar e cumpra esse limite. Configure um alarme para o lembrar
+                quando o tempo acabar.
               </p>
             </div>
           </div>
@@ -59,10 +59,10 @@ export default function ResponsibleGamblingPage() {
               <Wallet className="h-8 w-8 text-emerald-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Set a Budget</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">Estabeleça um Orçamento</h3>
               <p className="text-sm text-gray-300">
-                Only gamble with money you can afford to lose. Set a daily, weekly, or monthly spending limit and stick
-                to it.
+                Aposte apenas com dinheiro que pode permitir-se perder. Defina um limite diário, semanal ou mensal de
+                gastos e cumpra-o rigorosamente.
               </p>
             </div>
           </div>
@@ -72,10 +72,10 @@ export default function ResponsibleGamblingPage() {
               <Ban className="h-8 w-8 text-emerald-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Take Regular Breaks</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">Faça Pausas Regulares</h3>
               <p className="text-sm text-gray-300">
-                Gambling continuously can lead to poor decision-making. Take regular breaks to clear your mind and
-                reassess your gambling activity.
+                Apostar continuamente pode levar a más decisões. Faça pausas regulares para limpar a mente e reavaliar a
+                sua atividade de apostas.
               </p>
             </div>
           </div>
@@ -85,10 +85,10 @@ export default function ResponsibleGamblingPage() {
               <Brain className="h-8 w-8 text-emerald-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Stay Informed</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">Mantenha-se Informado</h3>
               <p className="text-sm text-gray-300">
-                Understand the odds and rules of the games you play. Remember that gambling outcomes are random and not
-                influenced by past results.
+                Compreenda as probabilidades e regras dos jogos que joga. Lembre-se que os resultados das apostas são
+                aleatórios e não são influenciados por resultados passados.
               </p>
             </div>
           </div>
@@ -98,10 +98,10 @@ export default function ResponsibleGamblingPage() {
               <AlertTriangle className="h-8 w-8 text-emerald-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Don't Chase Losses</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">Não Persiga as Perdas</h3>
               <p className="text-sm text-gray-300">
-                Trying to win back money you've lost often leads to bigger losses. Accept that losing is part of
-                gambling and walk away when you've reached your limit.
+                Tentar recuperar dinheiro perdido muitas vezes leva a perdas maiores. Aceite que perder faz parte das
+                apostas e afaste-se quando atingir o seu limite.
               </p>
             </div>
           </div>
@@ -111,21 +111,62 @@ export default function ResponsibleGamblingPage() {
               <Phone className="h-8 w-8 text-emerald-400" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Seek Help</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">Procure Ajuda</h3>
               <p className="text-sm text-gray-300">
-                If you're concerned about your gambling habits, don't hesitate to seek help. There are many
-                organizations that offer free and confidential support.
+                Se está preocupado com os seus hábitos de apostas, não hesite em procurar ajuda. Existem muitas
+                organizações que oferecem apoio gratuito e confidencial.
               </p>
             </div>
           </div>
         </div>
       </PolicySection>
 
-      <PolicySection title="Self-Exclusion Options" delay={200}>
+      <PolicySection title="Opções de Auto-Exclusão" delay={200}>
         <PolicyParagraph>
-          Most betting sites offer self-exclusion options that allow you to block access to your account for a specified
-          period. This can be a helpful tool if you feel you need a break from gambling. Additionally, there are
-          software tools and apps that can block access to gambling websites and apps across all your devices.
+          A maioria dos sites de apostas oferece opções de auto-exclusão que permitem bloquear o acesso à sua conta por
+          um período específico. Esta pode ser uma ferramenta útil se sentir que precisa de uma pausa das apostas. Além
+          disso, existem ferramentas de software e aplicações que podem bloquear o acesso a sites e aplicações de
+          apostas em todos os seus dispositivos.
+        </PolicyParagraph>
+      </PolicySection>
+
+      <PolicySection title="Recursos de Apoio em Portugal" delay={300}>
+        <PolicyParagraph>
+          Se você ou alguém que conhece está a lutar com problemas relacionados com o jogo, existem várias organizações
+          em Portugal que podem ajudar:
+        </PolicyParagraph>
+        <PolicyList
+          items={[
+            "SICAD (Serviço de Intervenção nos Comportamentos Aditivos e nas Dependências) - Linha de apoio: 211 210 200",
+            "Linha SOS Vício do Jogo - Telefone: 213 950 213",
+            "APAJO (Associação Portuguesa de Apoio ao Jogador) - Apoio especializado em dependência do jogo",
+            "Centro de Respostas Integradas (CRI) - Centros locais de apoio em todo o país",
+            "Consultas de Psicologia e Psiquiatria nos Centros de Saúde e Hospitais",
+          ]}
+        />
+      </PolicySection>
+
+      <PolicySection title="Ferramentas de Controlo" delay={400}>
+        <PolicyParagraph>
+          Muitas casas de apostas oferecem ferramentas para ajudar os jogadores a manter o controlo:
+        </PolicyParagraph>
+        <PolicyList
+          items={[
+            "Limites de depósito - Defina quanto pode depositar por dia, semana ou mês",
+            "Limites de apostas - Controle quanto pode apostar em cada sessão",
+            "Limites de tempo - Estabeleça quanto tempo pode passar no site",
+            "Períodos de reflexão - Pausas curtas de 24 horas a 6 semanas",
+            "Auto-exclusão - Bloqueio permanente ou temporário da conta",
+            "Verificações de realidade - Lembretes sobre o tempo gasto a jogar",
+          ]}
+        />
+      </PolicySection>
+
+      <PolicySection title="Para Familiares e Amigos" delay={500}>
+        <PolicyParagraph>
+          Se está preocupado com os hábitos de apostas de alguém próximo, também pode procurar apoio. Muitas
+          organizações oferecem aconselhamento e recursos para familiares e amigos de pessoas com problemas de jogo.
+          Lembre-se de que o apoio e a compreensão são fundamentais no processo de recuperação.
         </PolicyParagraph>
       </PolicySection>
 

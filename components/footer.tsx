@@ -58,7 +58,7 @@ export function Footer() {
                     <Image src="/srij-new.svg" alt="SRIJ" fill className="object-contain" />
                   </div>
                 </Link>
-                <span className="text-[8px] md:text-xs text-center text-gray-300">Regulação Jogos</span>
+
               </div>
 
               <div className="bg-gray-800 p-2 md:p-3 rounded-lg flex flex-col items-center border border-portugal-green/20">
@@ -67,7 +67,7 @@ export function Footer() {
                     <Image src="/icad.png" alt="ICAD" fill className="object-contain" />
                   </div>
                 </Link>
-                <span className="text-[8px] md:text-xs text-center text-gray-300">Comportamentos Aditivos</span>
+
               </div>
 
               <div className="bg-gray-800 p-2 md:p-3 rounded-lg flex flex-col items-center border border-portugal-red/20">
@@ -76,7 +76,7 @@ export function Footer() {
                     <Image src="/gamecare-new.svg" alt="GamCare" fill className="object-contain" />
                   </div>
                 </Link>
-                <span className="text-[8px] md:text-xs text-center text-gray-300">Apoio Confidencial</span>
+
               </div>
 
               <div className="bg-gray-800 p-2 md:p-3 rounded-lg flex flex-col items-center border border-portugal-red/20">
@@ -85,7 +85,7 @@ export function Footer() {
                     <Image src="/gamble-aware.webp" alt="GambleAware" fill className="object-contain" />
                   </div>
                 </Link>
-                <span className="text-[8px] md:text-xs text-center text-gray-300">Consciencialização</span>
+
               </div>
 
               <div className="bg-gray-800 p-2 md:p-3 rounded-lg flex flex-col items-center border border-portugal-green/20">
@@ -94,7 +94,7 @@ export function Footer() {
                     <Image src="/jogo-responsavel-new.png" alt="Jogo Responsável" fill className="object-contain" />
                   </div>
                 </Link>
-                <span className="text-[8px] md:text-xs text-center text-gray-300">Jogo Responsável PT</span>
+
               </div>
             </div>
           </div>
